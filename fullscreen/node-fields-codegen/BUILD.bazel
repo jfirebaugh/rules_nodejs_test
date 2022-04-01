@@ -1,0 +1,11 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+    name = "ts",
+    srcs = glob(["src/*.ts"]),
+    source_map = True,
+    tsconfig = "tsconfig.json",
+    deps = [
+        "//share/kiwi:js",
+    ]
+)

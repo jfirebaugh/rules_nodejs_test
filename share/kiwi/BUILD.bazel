@@ -1,0 +1,11 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+    name = "js",
+    srcs = glob(["js/*.ts"]),
+    tsconfig = "js/tsconfig.json",
+    declaration = True,
+    visibility = [
+        "//visibility:public",
+    ],
+)
