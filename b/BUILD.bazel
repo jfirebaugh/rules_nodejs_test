@@ -1,9 +1,9 @@
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 
 ts_project(
-    name = "js",
-    srcs = glob(["js/*.ts"]),
-    tsconfig = "js/tsconfig.json",
+    name = "b",
+    srcs = ["b.ts"],
+    tsconfig = "tsconfig.json",
     declaration = True,
     visibility = [
         "//visibility:public",
