@@ -3,9 +3,9 @@
     // https://bazelbuild.github.io/rules_nodejs/TypeScript.html#ts_project
     // https://github.com/microsoft/TypeScript/issues/37378
     "rootDirs": [
-      ".",
-      "../bazel-out/host/bin/a",
-      "../bazel-out/darwin-fastbuild/bin/a",
+      "..",
+      "../bazel-out/host/bin",
+      "../bazel-out/darwin-fastbuild/bin",
     ]
   }
 }
